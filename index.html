@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Head Avatar Reenactment with tri-plane.">
+  <meta name="keywords" content="Head Avatar, tri-plane, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Tri<sup>2</sup> -plane: Thinking Head Avatar via Feature Pyramid</h1>
+
+                    <div class="is-size-5 publication-authors">
+                      <span class="author-block">
+                        <a href="https://songluchuan.github.io/">Luchuan Song</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://andypinxinliu.github.io/">Pinxin Liu</a><sup>1</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://lelechen63.github.io/">Lele Chen</a><sup>2</sup>,
+                      </span>
+                      <span class="author-block">
+                        <a>Guojun Yin</a><sup>3</sup>,
+                      </span>
+                      <span class="author-block">
+                        <a href="https://www.cs.rochester.edu/~cxu22/">Chenliang Xu</a><sup>1</sup>,
+                      </span>
+                    </div>
+          
+                    <div class="is-size-5 publication-authors">
+                      <span class="author-block"><sup>1</sup>University of Rochester,</span>
+                      <span class="author-block"><sup>2</sup>Sony AI,</span>
+                      <span class="author-block"><sup>3</sup>USTC</span>
+                    </div>
+
+       
+          
+
+
+          <!-- <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous ECCV 2024 Submission (#5492),
+            </span>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/Anonymous"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Songluchuan/Tri2plane"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+
+              <!-- Appendix Link. -->
+<!--               <span class="link-block">
+                <a href="./Appendix_5492.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Appdx.</span>
+                  </a>
+              </span> -->
+
+              <span class="link-block">
+                <a href="./Appendix_5492.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Appx.</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+        <img src="./static/images/Teaser_crop.jpg"/>
+      <p>
+        Figure. 1. <b>We present Tri<sup>2</sup>-plane</b>, a method designed for high-fidelity head avatar reconstruction from a short monocular video. The top row illustrates the novel view avatar synthesis (interpolation of viewpoints ranging from [-40&deg;, +40&deg;]) with facial expressions, and the bottom row displays the canonical appearance at corresponding.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent years have witnessed considerable achievements in facial avatar reconstruction with neural volume rendering. Despite notable advancements, the reconstruction of complex and dynamic head movements from monocular videos still suffers from capturing and restoring fine-grained details. In this work, we propose a novel approach, named Tri<sup>2</sup>-plane, for monocular photo-realistic volumetric head avatar reconstructions. Distinct from the existing works that rely on a single tri-plane deformation field for dynamic facial modeling, the proposed Tri<sup>2</sup>-plane leverages the principle of feature pyramids and three top-to-down lateral connections tri-planes for details improvement. It samples and renders facial details at multiple scales, transitioning from the entire face to specific local regions and then to even more refined sub-regions. Moreover, we incorporate a camera-based geometry-aware sliding window method as an augmentation in training, which improves the robustness beyond the canonical space, with a particular improvement in cross-identity generation capabilities. Experimental outcomes indicate that the Tri<sup>2</sup>-plane not only surpasses existing methodologies but also achieves superior performance across quantitative and qualitative assessments. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+  
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3" style="text-align: center;">Method</h2>
+    <div class="hero-body">
+        <img src="./static/images/pipelines-crop.jpg"/>
+      <p>Figure. 2. <b>Overview of Tri<sup>2</sup>-plane</b>. The pipeline steps include four components: \textbf{(1)} parametric facial tracking and zero-pose rendering are applied to generate mean texture and normal maps (shown as Front-View); <b>(2)</b> a facial condition embedding from inputs (&beta;<sub>t</sub>, &gamma;<sub>t</sub> and encoded <b>I<sub>t</sub></b>); <b>(3)</b> the multiple tri-plane for voxel rendering (as Tri<sup>2</sup>-plane), accommodating various facial scales while employing shared MLP weights and <b>(4)</b> the resulting images are refined with a super-resolution model (not depicted in the figure). Furthermore, we have introduced the geometry-aware sliding window for training data augmentation to improve robustness, which incorporates the camera parameters (<b>c<sub>I</sub></b>, <b>c<sub>E</sub></b>) with the tracked translation values to form the training pair.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #fff;">
+  <h2 class="title is-3" style="text-align: center;">Demo Video</h2>
+  <p style="text-align: center;">We have compressed the videos and downgrade quality to accommodate the 100MB supplementary material submission limition.</p>
+  <p style="text-align: center;">[<font color="red">Include Voice Over</font>]</p>
+  <div style="width:100%; text-align: center;">
+    <div style="width:960px; text-align: center; margin:auto;">
+      <p style="width:100%; max-width:960px; word-wrap: break-word; text-align: center;">
+      </p>
+      <div style="width:100%">
+        <video poster="" autoplay controls muted loop playsinline height="100%" style="width:100%">
+          <source src="./5492-main-demo-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section style="background-color: #fff;">
+  <h2 class="title is-3" style="text-align: center;">Demo Video [Baselines in Appendix]</h2>
+  <div style="width:100%; text-align: center;">
+    <div style="width:960px; text-align: center; margin:auto;">
+      <p style="width:100%; max-width:960px; word-wrap: break-word; text-align: center;">
+      </p>
+      <div style="width:100%">
+        <video poster="" autoplay controls muted loop playsinline height="100%" style="width:100%">
+          <source src="./5492-Appx-demo-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code></code>@article{song2024tri,
+      title={Tri $\^{}$\{$2$\}$ $-plane: Volumetric Avatar Reconstruction with Feature Pyramid},
+      author={Song, Luchuan and Liu, Pinxin and Chen, Lele and Yin, Guojun and Xu, Chenliang},
+      journal={arXiv preprint arXiv:2401.09386},
+      year={2024}
+    }</code></pre>
+  </div>
+</section>
+
+<footer class="footer" style="padding-top: 6px; padding-bottom: 6px;">
+  <div class="container">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Our website template comes from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and is modified based on it. Thanks to the authors contribution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
